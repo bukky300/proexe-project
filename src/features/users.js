@@ -26,6 +26,7 @@ export const userSlice = createSlice({
           user.name = action.payload.name;
           user.email = action.payload.email;
         }
+        return user;
       });
     },
 

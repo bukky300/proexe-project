@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ReactDOM from "react-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteUser } from "../features/users";
 
@@ -26,6 +25,7 @@ function UserList() {
     aToZ.map((username) => {
       let a = allUsers.find((user) => user.username === username);
       newArr.push(a);
+      return a;
     });
     setUsers(newArr);
   }
@@ -43,6 +43,7 @@ function UserList() {
     zToA.map((username) => {
       let a = allUsers.find((user) => user.username === username);
       newArr.push(a);
+      return newArr;
     });
     setUsers(newArr);
   }
