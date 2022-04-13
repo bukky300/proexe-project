@@ -86,9 +86,8 @@ function UserList() {
           </div>
         </div>
       )}
-
       <div className="flex justify-center my-12 ">
-        <div className=" md:w-[96%] shadow-2xl rounded-xl">
+        <div className=" w-[96%]  shadow-2xl rounded-xl">
           <div className="flex justify-between mt-4 ">
             <div className=" font-semibold ml-4">
               <h3>User list</h3>
@@ -104,8 +103,8 @@ function UserList() {
               </button>
             </div>
           </div>
-          <div className="flex justify-center mb-4  overflow-x-auto ">
-            <table className=" w-[98%] border-2 border-solid mt-4 min-w-[860px]">
+          <div className=" mb-4  overflow-x-auto ">
+            <table className=" w-[98%] mx-auto border-2 border-solid mt-4 min-w-[860px]">
               <thead className="bg-slate-50 w-full">
                 <tr className=" text-center h-28 border-b-2 border-solid">
                   <td className=" w-[14.285714%]">Id</td>
