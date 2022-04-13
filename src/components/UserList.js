@@ -171,8 +171,97 @@ function UserList() {
           </div>
         </div>
       </div>
+      ; */
     </>
   );
 }
 
 export default UserList;
+
+{
+  /* <div className="flex justify-center my-12 ">
+  <div className=" md:w-[96%] shadow-2xl rounded-xl">
+    <div className="flex justify-between mt-4 ">
+      <div className=" font-semibold ml-4">
+        <h3>User list</h3>
+      </div>
+      <div className="mr-4 ">
+        <button
+          className="px-8 bg-blue-500 py-2 text-white shadow-md rounded-md"
+          onClick={() => {
+            navigate("/adduser");
+          }}
+        >
+          Add New
+        </button>
+      </div>
+    </div>
+    <div className="flex justify-center mb-4  overflow-x-auto ">
+      <table className=" w-[98%] border-2 border-solid mt-4 min-w-[860px]">
+        <thead className="bg-slate-50 w-full">
+          <tr className=" text-center h-28 border-b-2 border-solid">
+            <td className=" w-[14.285714%]">Id</td>
+            <td className=" w-[14.285714%]">Name</td>
+            <td className=" w-[14.285714%] align-middle flex flex-col mt-10 mx-auto justify-center">
+              <span>Username</span>
+              <span className="flex space-x-2 mt-1">
+                <button
+                  className=" bg-green-400 px-2 rounded"
+                  onClick={handleSortAsc}
+                >
+                  asc
+                </button>
+                <button
+                  className="bg-green-400 px-2 rounded"
+                  onClick={handleSortDesc}
+                >
+                  desc
+                </button>
+              </span>
+            </td>
+            <td className=" w-[14.285714%]">Email</td>
+            <td className=" w-[14.285714%]">City</td>
+            <td className=" w-[14.285714%]">Edit</td>
+            <td className=" w-[14.285714%]">Delete</td>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr
+              className="text-center md:text-sm h-28 border-b-[1px] border-solid"
+              key={user.id}
+            >
+              <td className=" w-[14.285714%]">{user?.id}</td>
+              <td className=" w-[14.285714%]">{user?.name}</td>
+              <td className=" w-[14.285714%]">{user?.username}</td>
+              <td className=" w-[14.285714%]">{user?.email}</td>
+              <td className=" w-[14.285714%]">{user?.address?.city}</td>
+              <td className=" w-[14.285714%]">
+                <button
+                  className=" bg-amber-500 text-white px-8 md:px-6 py-1 rounded"
+                  onClick={() => {
+                    navigate(`/edituser/${user.id}`);
+                  }}
+                >
+                  edit
+                </button>
+              </td>
+              <td className=" w-[14.285714%]">
+                <button
+                  className=" bg-red-600 md:mr-1 text-white px-8 md:px-6 py-1 rounded"
+                  onClick={() => {
+                    setModalOpen(true);
+                    setUserId(user.id);
+                  }}
+                >
+                  delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>; */
+}
